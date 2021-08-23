@@ -5,7 +5,7 @@
 
 > A simple calculator application built with React.js.
 
-![Weather App](https://github.com/ChanBos/React-Weather-App/blob/master/public/images/Weather-Bot.png)
+![Calculator App](https://github.com/ChanBos/React-Calculator-App/blob/master/public/images/My-Calculator.png)
 
 ### ✨ [Link to the application]()
 
