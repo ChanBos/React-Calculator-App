@@ -7,7 +7,7 @@
 
 ![Calculator App](https://github.com/ChanBos/React-Calculator-App/blob/master/public/images/My-Calculator.png)
 
-### ✨ [Link to the application]()
+### ✨ [Link to the application](https://feeble-bedroom.surge.sh/)
 
 ## Table of Contents:
 
