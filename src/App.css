@@ -1,38 +1,84 @@
-.App {
+/* Set the size (height x width), the top padding and the text colour and alignment. Also added a gradient background to the header. */
+h1 {
+  height: 55px;
+  width: 100%;
+  padding-top: 10px;
   text-align: center;
+  color: #e7e7e7;
+  background-color: #d3d3d3;
+  background-image: linear-gradient(180deg, #0d324d 0%, #0d324db9 74%);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Set the size (height x width), the margins, the padding of the result window. Also added a gradient background and added a border (sized, 
+styled, coloured and radius set). */
+.result {
+  height: 50px;
+  width: 314px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #c3cbdc;
+  background-image: linear-gradient(147deg, #c3cbdc 0%, #edf1f4 90%);
+  border: 3px solid black;
+  border-radius: 5px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Set the width, the top margin and the text alignment and size of the result's paragraph. */
+.result p {
+  width: 315px;
+  margin-top: 6px;
+  text-align: right;
+  font-size: 28px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Implemented a place holder that changes once input is received. */
+p:empty:not(:focus)::before {
+  content: attr(data-placeholder);
 }
 
-.App-link {
-  color: #61dafb;
+/* Set the size (height x width), the margins, the padding of the calculator's body. Also added a gradient background, added a border and a box 
+shadow (sized, styled, coloured and radius set). */
+.calculator-body {
+  height: 480px;
+  width: 340px;
+  margin: 5px auto;
+  padding: 10px;
+  background-color: #e7eff9;
+  background-image: linear-gradient(315deg, #e7eff9 0%, #cfd6e6 74%);
+  border: 1px solid #57606f5b;
+  box-shadow: 5px 10px 20px #57606f inset;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Set the size (height x width), the margins, the font size and the border radius of the buttons. Also added a gradient background. */
+button {
+  height: 70px;
+  width: 75px;
+  margin: 4px 3px 4px 6px;
+  font-size: 25px;
+  background-color: #d3d3d3;
+  background-image: linear-gradient(315deg, #d3d3d3 0%, #57606f 74%);
+  border-radius: 5px;
+}
+
+/* Added a gradient background to the symbol buttons. */
+.symbolbutton {
+  background-color: #d3d3d3;
+  background-image: linear-gradient(315deg, #d3d3d3 0%, #4b5461 60%);
+}
+
+/* Added a gradient background to the equal button. */
+#equalbutton {
+  background-color: #d3d3d3;
+  background-image: linear-gradient(315deg, #0d324d67 0%, #0d324d 74%);
+}
+
+/* Set for all of the buttons to change font colour and weight, the cursor , the border (styled, coloured and sized) and added a filter to be 
+applied once hovered over. */
+button:hover {
+  color: #d3d3d3;
+  font-weight: bold;
+  cursor: pointer;
+  border: 3px solid #0d324d;
+  filter: brightness(85%);
 }
